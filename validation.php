@@ -5,8 +5,8 @@ return array(
 	"active_url"           => ":attribute nie jest prawidłowym adresem URL.",
 	"after"                => ":attribute musi być datą późniejszą niż :date.",
 	"alpha"                => ":attribute może zawierać tylko litery.",
-	"alpha_dash"           => ":attribute może zawierać tylko litery, liczby i podkreślenia.",
-	"alpha_num"            => ":attribute może zawierać tylko litery i liczby.",
+	"alpha_dash"           => ":attribute może zawierać tylko litery, cyfry i podkreślenia.",
+	"alpha_num"            => ":attribute może zawierać tylko litery i cyfry.",
 	"array"                => ":attribute musi być tablicą.",
 	"before"               => ":attribute musi być datą wcześniejszą niż :date.",
 	"between"              => array(
@@ -44,7 +44,7 @@ return array(
 	"not_in"               => "wybrany :attribute jest nieprawidłowy.",
 	"numeric"              => ":attribute must be a number.",
 	"regex"                => "format :attribute jest nieprawidłowy",
-	"required"             => "pole :attribute field is required.",
+	"required"             => "pole :attribute jest wymagane.",
 	"required_if"          => "pole :attribute jest wymagane, gdy :other ma wartość :value.",
 	"required_with"        => "pole :attribute jest wymagane, gdy :values są zdefiniowane.",
 	"required_with_all"    => "pole :attribute jest wymagane, gdy :values są zdefiniowane.",
@@ -89,6 +89,8 @@ return array(
 	|
 	*/
 
-	'attributes' => array(),
+	'attributes' => array(
+		'username' => 'nazwa użytkownika'
+	),
 
 );
